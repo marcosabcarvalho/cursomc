@@ -30,6 +30,7 @@ You can initialize this repository with code from a Subversion, Mercurial, or TF
 ====================================================================
 Mensagem obtida quando criei o projeto no site https://github.com
 ====================================================================
+<<<<<<< HEAD
 proximo comando:
 git remote add origin https://github.com/marcosabcarvalho/cursomc.git
 
@@ -38,3 +39,7 @@ Após testes de REST, novo versionamento:
 git status
 git add .
 git commit -m "REST testado"
+=======
+
+git remote add origin https://github.com/marcosabcarvalho/cursomc.git
+
