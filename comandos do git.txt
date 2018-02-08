@@ -2,3 +2,39 @@ git init
 git config --global user.name "Marcos Carvalho"
 git config --global user.email "marcosabcarvalho@yahoo.com"
 git status
+git add . //transfere os arquivos não rastreados do git(untracked) para a área de stad(área temporária que depois podemos aplicar o commit)
+git status
+git commit -m "Projeto Criado"
+git log
+
+===================================================================
+Mensagem obtida quando criei o projeto no site https://github.com
+===================================================================
+…or create a new repository on the command line
+
+echo "# cursomc" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/marcosabcarvalho/cursomc.git
+git push -u origin master
+
+…or push an existing repository from the command line
+
+git remote add origin https://github.com/marcosabcarvalho/cursomc.git
+git push -u origin master
+
+…or import code from another repository
+
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.	
+====================================================================
+Mensagem obtida quando criei o projeto no site https://github.com
+====================================================================
+proximo comando:
+git remote add origin https://github.com/marcosabcarvalho/cursomc.git
+
+Após testes de REST, novo versionamento:
+
+git status
+git add .
+git commit -m "REST testado"
