@@ -1,0 +1,4 @@
+git init
+git config --global user.name "Marcos Carvalho"
+git config --global user.email "marcosabcarvalho@yahoo.com"
+git status
