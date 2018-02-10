@@ -1,0 +1,92 @@
+===install jdk8 in debian stretch===
+tar xvfz ~/Downloads/jdk-8*.tar.gz -C /tmp/
+chown -R root:root /tmp/jdk1.8*
+chmod -R +x /tmp/jdk1.8*/bin
+mv /tmp/jdk1.8* /usr/lib/jvm/
+update-alternatives --install /usr/bin/java java /usr/lib/jvm/jdk1.8*/bin/java 1065
+update-alternatives --install /usr/bin/javac javac /usr/lib/jvm/jdk1.8*/bin/javac 1065
+update-alternatives --install /usr/bin/jar jar /usr/lib/jvm/jdk1.8*/bin/jar 1065
+update-alternatives --install /usr/bin/javaws javaws /usr/lib/jvm/jdk1.8*/bin/javaws 1065
+update-alternatives --config java
+exit
+nano $HOME/.bashrc
+Append export JAVA_HOME=/usr/lib/jvm/jdk1.8[uX](obs.:jdk1.8_162===>[uX]=_162) (obs2.: view [uX]: ls /usr/lib/jvm/)
+bash
+java -version
+====
+apt-get install mc
+apt-get install engrampa
+apt-get install git
+apt-get install curl
+git clone https://github.com/nodesource/distributions.git
+chmod +x *
+./setup_9.x
+apt-get install nodejs
+====angular cli=======(root)
+npm install -g @angular/cli
+ng new my-app(===no need root...===)
+cd my-app
+ng serve -open
+====install chrome====(root)
+https://www.google.com/chrome/browser
+save google-chrome-stable_current_amd64.deb
+dpkg -i google-*.deb
+install postman extension
+===spring boot===
+git clone https://github.com/spring-guides/gs-spring-boot.git
+===visual studio code===
+download https://code.visualstudio.com/docs/?dv=linux64_deb
+su dpkg -i code_*
+===scala ide==
+Add url eclipse>>help>>install new software http://download.scala-ide.org/sdk/lithium/e47/scala212/stable/site
+===Jetbrains pycharm 2017===
+tar xvfz pych* -C /tmp/
+cd tmp
+chown -R marcosabcarvalho:marcosabcarvalho *
+mv pych* /opt/
+cd licence(crack all Os)
+su
+./dvt-jb_licsrv.linux.amd64 -mode install
+Reboot for start service
+Start the application and point it to the license server.If you are running the license server on the same host,you can point it to "http://localhost:1337"
+===wineHQ===
+https://wiki.winehq.org/Debian
+su dpkg --add-architecture i386
+wget -nc https://dl.winehq.org/wine-builds/Release.key
+apt-key add Release.key
+Add /etc/apt/sources.list deb https://dl.winehq.org/wine-builds/debian/ stretch main
+apt-get update
+apt-get install --install-recommends winehq-stable
+===Asp.Net Core===(root ok?)
+download https://www.microsoft.com/net/learn/get-started/linuxdebian
+apt-get install curl libunwind8 gettext apt-transport-https
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-debian-stretch-prod stretch main" > /etc/apt/sources.list.d/dotnetdev.list'
+apt-get update
+apt-get install dotnet-sdk-2.1.4
+open VS code
+(Ctrl + P)
+Paste ext install ms-vscode.csharp
+--------
+Create your app:
+dotnet new console -o myApp
+cd myApp
+dotnet run
+-------
+tar -cvzf 'windows xp64.tar.gz' 'windows xp64.vdi'
+tar -xvzf abc.tar.gz -C /home/linux10complica/
+
+===STS on Eclipse JEE====
+Update Sites
+
+If you want to install STS in an existing Eclipse installation, you can use one of the following update sites. Please choose the one that matches the Eclipse version you're running:
+Eclipse 	Update Sites
+4.7 	http://dist.springsource.com/release/TOOLS/update/e4.7/
+4.6 	http://dist.springsource.com/release/TOOLS/update/e4.6/
+
+As an alternative, you can also install STS directly from the Eclipse Marketplace. 
+
+
+
+
